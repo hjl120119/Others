@@ -117,14 +117,14 @@ function handleWareBusiness() {
         const obj = {
             "bId": "eCustom_flo_199",
             "cf": {
-                "bgc": "#ffffff",
+                "bgc": "#fe0000",
                 "spl": "empty"
             },
             "data": {
                 "ad": {
                     "adword": text,
                     "textColor": "#fe0000",
-                    "color": "#f23030",
+                    "color": "#fe0000",
                     "text-align": "justify",
                     "word-break": "break-all",
                     "newALContent": true,
