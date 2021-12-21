@@ -123,7 +123,7 @@ function handleWareBusiness() {
             "data": {
                 "ad": {
                     "adword": text,
-                    "textColor": "#00FFFF",
+                    "textColor": "#fe0000",
                     "color": "#f23030",
                     "text-align": "justify",
                     "word-break": "break-all",
