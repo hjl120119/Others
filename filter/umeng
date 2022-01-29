@@ -1,0 +1,24 @@
+# 记得要在mitm里添加对应域名，reject-tinygif才会起效（不添加就变成了普通的reject）
+# *.umeng.com, *.umengcloud.com,*.umeng.co, *.umengcloudlog.com
+# 20211030 禁用此规则，部分app（彩云天气）当mitm umeng相关域名时会闪退。
+# umeng.co
+DOMAIN-SUFFIX,umeng.co
+# umeng.com
+DOMAIN-SUFFIX,ar.umeng.com
+DOMAIN-SUFFIX,alog.umeng.com
+DOMAIN-SUFFIX,alogs.umeng.com
+DOMAIN-SUFFIX,log.umeng.com
+DOMAIN-SUFFIX,logs.umeng.com
+DOMAIN-SUFFIX,msg.umeng.com
+DOMAIN-SUFFIX,plbslog.umeng.com
+DOMAIN-SUFFIX,ulogs.umeng.com
+DOMAIN-SUFFIX,uop.umeng.com
+DOMAIN-SUFFIX,utoken.umeng.com
+# umengcloud.com
+DOMAIN-SUFFIX,log.umengcloud.com
+DOMAIN-SUFFIX,ulog.umengcloud.com
+DOMAIN-SUFFIX,ulogs.umengcloud.com
+# umengcloudlog.com
+DOMAIN-SUFFIX,logs.umengcloudlog.com
+DOMAIN-SUFFIX,alogs.umengcloudlog.com
+DOMAIN-SUFFIX,alog.umengcloudlog.com
