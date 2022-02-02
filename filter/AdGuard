@@ -1,0 +1,19 @@
+# 腾讯视频开屏广告
+DOMAIN-KEYWORD,monitor,REJECT
+DOMAIN-KEYWORD,trace.qq.com,REJECT-DROP
+DOMAIN-SUFFIX,dp3.qq.com,REJECT
+DOMAIN-SUFFIX,mdt.qq.com,REJECT
+DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
+DOMAIN-SUFFIX,soup.v.qq.com,REJECT
+DOMAIN-SUFFIX,mcgi.v.qq.com,REJECT
+DOMAIN-SUFFIX,omgid.qq.com,REJECT
+# 抖音广告
+DOMAIN-SUFFIX,p3.pstatp.com,REJECT
+DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
+# QQ音乐
+DOMAIN,adcdn.tencentmusic.com
+DOMAIN,ad.tencentmusic.com
+DOMAIN,adplay.tencentmusic.com
+DOMAIN,adexpo.tencentmusic.com
+DOMAIN,ssp.tencentmusic.com
+DOMAIN,adstats.tencentmusic.com
