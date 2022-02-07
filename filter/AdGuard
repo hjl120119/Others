@@ -1,15 +1,18 @@
 # 腾讯视频开屏广告
-DOMAIN-KEYWORD,adservice,REJECT
-DOMAIN-KEYWORD,monitor,REJECT
-DOMAIN-KEYWORD,trace.qq.com,REJECT
-DOMAIN-SUFFIX,gtimg.com,REJECT
-DOMAIN-SUFFIX,rqd.qq.com,REJECT
-DOMAIN-SUFFIX,dp3.qq.com,REJECT
-DOMAIN-SUFFIX,mdt.qq.com,REJECT
-DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
-DOMAIN-SUFFIX,soup.v.qq.com,REJECT
-DOMAIN-SUFFIX,mcgi.v.qq.com,REJECT
-DOMAIN-SUFFIX,omgid.qq.com,REJECT
+DOMAIN-SUFFIX,e.qq.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,l.qq.com
+DOMAIN,adsmind.apdcdn.tc.qq.com
+DOMAIN,adsmind.gdtimg.com
+DOMAIN,adsmind.tc.qq.com
+DOMAIN,adsmind.ugdtimg.com
+DOMAIN,livep.l.t002.ottcn.com
+DOMAIN,pgdt.gtimg.cn
+DOMAIN,pgdt.gtimg.com
+DOMAIN,pgdt.ugdtimg.com
+DOMAIN,splashqqlive.gtimg.com
+DOMAIN,vv.video.qq.com
+DOMAIN,wa.gtimg.com
 # 抖音广告
 DOMAIN-SUFFIX,p3.pstatp.com,REJECT
 DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
