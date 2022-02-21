@@ -7,3 +7,5 @@ ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 100.64.0.0/10, direct
 ip-cidr, 224.0.0.0/4, direct
 ip6-cidr, fe80::/10, direct
+
+GEOIP,CN,DIRECT
