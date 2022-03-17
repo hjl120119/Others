@@ -36,7 +36,7 @@ let args = getArgs();
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
-  let content = [`用量:${bytesToSize(used)} | 到期:${formatTime(expire)}`];
+  let content = [`Used：${bytesToSize(used)} | Expire：${formatTime(expire)}`];
 
 /*
   if (resetDayLeft) {
@@ -143,5 +143,5 @@ function formatTime(time) {
   let year = dateObj.getFullYear();
   let month = dateObj.getMonth() + 1;
   let day = dateObj.getDate();
-  return year + "-" + month + "-" + day + "-";
+  return year + "年" + month + "月" + day +   "日";
 }
