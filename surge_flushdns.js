@@ -35,12 +35,12 @@ let seconds=Math.round(leave3/1000)
 if(days==0){
 
 	if(hours==0){
-	if(minutes==0)return(`${seconds}S`);
-	return(`${minutes}M${seconds}S`)
+	if(minutes==0)return(`${seconds}:`);
+	return(`${minutes}:${seconds}:`)
 	}
-	return(`${hours}H${minutes}M${seconds}S`)
+	return(`${hours}:${minutes}:${seconds}:`)
 	}else {
-	return(`${days}D${hours}H${minutes}M`)
+	return(`${days}:${hours}:${minutes}:`)
 	}
 
 }
