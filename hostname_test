@@ -1,0 +1,4 @@
+$httpAPI("GET", "/v1/profiles/current?sensitive=0", null, body => {
+console.log(body.profile.match(/hostname(-disabled)? =.*/g))
+$done()
+})
