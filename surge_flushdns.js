@@ -40,7 +40,7 @@ if(days==0){
 	}
 	return(`${hours}:${minutes}:${seconds}`)
 	}else {
-	return(`${days}:${hours}:${minutes}`)
+	return(`${days}:${hours}:${minutes}:${seconds}`)
 	}
 
 }
