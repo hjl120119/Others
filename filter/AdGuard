@@ -1,25 +1,85 @@
+# 拦截100 域名权限
+DOMAIN-SUFFIX,huoying666.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,s2.huoying666.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,u.huoying666.com,REJECT-NO-DROP
+# 云闪付 去广告
+URL-REGEX,^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/long,REJECT
+# 交管12123 去广告
+URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$,REJECT
+# 京东极速版
+URL-REGEX,https://api.m.jd.com/client.action\?functionId=lite_advertising,REJECT
+# 微信小程序广告
+DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com,REJECT-DROP
+DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com,REJECT-DROP
 # 腾讯视频开屏广告
-DOMAIN-SUFFIX,e.qq.com
-DOMAIN-SUFFIX,gdt.qq.com
-DOMAIN-SUFFIX,l.qq.com
-DOMAIN,adsmind.apdcdn.tc.qq.com
-DOMAIN,adsmind.gdtimg.com
-DOMAIN,adsmind.tc.qq.com
-DOMAIN,adsmind.ugdtimg.com
-DOMAIN,livep.l.t002.ottcn.com
-DOMAIN,pgdt.gtimg.cn
-DOMAIN,pgdt.gtimg.com
-DOMAIN,pgdt.ugdtimg.com
-DOMAIN,splashqqlive.gtimg.com
-DOMAIN,vv.video.qq.com
-DOMAIN,wa.gtimg.com
-# 抖音广告
-DOMAIN-SUFFIX,p3.pstatp.com,REJECT
-DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
+DOMAIN-SUFFIX,e.qq.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,l.qq.com,REJECT
+DOMAIN,adsmind.apdcdn.tc.qq.com,REJECT
+DOMAIN,adsmind.gdtimg.com,REJECT
+DOMAIN,adsmind.tc.qq.com,REJECT
+DOMAIN,adsmind.ugdtimg.com,REJECT
+DOMAIN,livep.l.t002.ottcn.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT-DROP
+DOMAIN,pgdt.gtimg.com,REJECT
+DOMAIN,pgdt.ugdtimg.com,REJECT
+DOMAIN,splashqqlive.gtimg.com,REJECT
+DOMAIN,wa.gtimg.com,REJECT
+DOMAIN,vv.video.qq.com,REJECT-NO-DROP
 # QQ音乐
-DOMAIN,adcdn.tencentmusic.com
-DOMAIN,ad.tencentmusic.com
-DOMAIN,adplay.tencentmusic.com
-DOMAIN,adexpo.tencentmusic.com
-DOMAIN,ssp.tencentmusic.com
-DOMAIN,adstats.tencentmusic.com
+DOMAIN,tmead.y.qq.com,REJECT-DROP
+DOMAIN,adcdn.tencentmusic.com,REJECT
+DOMAIN,ad.tencentmusic.com,REJECT-DROP
+DOMAIN,adplay.tencentmusic.com,REJECT
+DOMAIN,adexpo.tencentmusic.com,REJECT
+DOMAIN,ssp.tencentmusic.com,REJECT
+DOMAIN,adstats.tencentmusic.com,REJECT-NO-DROP
+# 抖音广告
+DOMAIN-SUFFIX,p3.pstatp.com,REJECT-NO-DROP
+DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT-NO-DROP
+# 优酷去广告
+DOMAIN-SUFFIX,atm.youku.com,REJECT
+DOMAIN,ad.mobile.youku.com,REJECT
+DOMAIN,iyes.youku.com,REJECT
+DOMAIN,pl.cp31.ott.cibntv.net,REJECT
+# 爱奇艺去开屏和视频暂停广告
+DOMAIN,api.cupid.dns.iqiyi.com,REJECT
+DOMAIN,kjp.cupid.iqiyi.com,REJECT
+//host-suffix, cupid.iqiyi.com, reject
+# 高德地图
+DOMAIN,optimus-ads.amap.com,REJECT
+DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT
+# 垃圾空链接
+DOMAIN,app-alpha.bytedance.net,REJECT-NO-DROP
+DOMAIN-SUFFIX,v.aaplimg.com,REJECT
+DOMAIN,p101-acsegateway.icloud.com.cn,REJECT
+IP-CIDR,58.83.230.158/32,REJECT-TINYGIF,no-resolve //京喜app
+# QQ
+IP-CIDR,36.110.144.18/32,REJECT-TINYGIF,no-resolve
+IP-CIDR,39.165.89.140/32,REJECT-TINYGIF,no-resolve
+IP-CIDR,183.61.49.155/32,REJECT-TINYGIF,no-resolve
+IP-CIDR,59.36.121.252/32,REJECT-TINYGIF,no-resolve
+# speedtest
+IP-CIDR,113.57.249.2/32,REJECT,no-resolve
+IP-CIDR,112.122.10.26/32,REJECT,no-resolve
+IP-CIDR,221.12.39.2/32,REJECT,no-resolve
+IP-CIDR,101.71.241.238/32,REJECT,no-resolve
+IP-CIDR,211.95.17.50/32,REJECT,no-resolve
+IP-CIDR,10.188.40.2/32,REJECT,no-resolve //顺丰
+# 贴吧垃圾空链接
+IP-CIDR,43.225.209.48/32,REJECT,no-resolve
+IP-CIDR,43.224.186.48/32,REJECT,no-resolve
+IP-CIDR,59.109.58.48/32,REJECT,no-resolve
+IP-CIDR,101.246.172.48/32,REJECT,no-resolve
+IP-CIDR,103.57.14.48/32,REJECT,no-resolve
+IP-CIDR,103.205.139.48/32,REJECT,no-resolve
+IP-CIDR,113.214.173.48/32,REJECT,no-resolve
+IP-CIDR,113.215.1.48/32,REJECT,no-resolve
+IP-CIDR,113.215.237.48/32,REJECT,no-resolve
+IP-CIDR,119.44.3.48/32,REJECT,no-resolve
+IP-CIDR,124.14.15.48/32,REJECT,no-resolve
+IP-CIDR,124.192.164.48/32,REJECT,no-resolve
+IP-CIDR,180.88.56.48/32,REJECT,no-resolve
+IP-CIDR,202.150.19.48/32,REJECT,no-resolve
+IP-CIDR,211.162.160.48/32,REJECT,no-resolve
+IP-CIDR,211.162.215.48/32,REJECT,no-resolve
